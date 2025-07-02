@@ -1,5 +1,5 @@
 
-Linkedlistedlist 
+class Linkedlist 
 {
     class node
     {
@@ -14,11 +14,10 @@ Linkedlistedlist
     }
     node head;
 
-    
-    
-}
-
-public static void main(String[] args)
+    public static void main(String[] args)
 {
     Linkedlist list = new Linkedlist();
 }
+    
+}
+
