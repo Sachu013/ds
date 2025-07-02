@@ -12,8 +12,9 @@ public class Insertbeg
             next = null;
         }
 
-        node head;
-
+        
+    }
+    node head;
 
         public void insertAtBeginning(int data)
         {
@@ -33,9 +34,7 @@ public class Insertbeg
             }
         }
     
-}
-
-public static void main(String[] args)
+    public static void main(String[] args)
 {
     Insertbeg l = new Insertbeg();
     Scanner sc = new Scanner(System.in);
@@ -45,3 +44,7 @@ public static void main(String[] args)
     l.display();
     sc.close();
 }
+    
+}
+
+
