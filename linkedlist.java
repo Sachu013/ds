@@ -1,5 +1,5 @@
 
-linkedlist class linkedlist 
+class linkedlist 
 {
     class node
     {
