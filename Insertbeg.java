@@ -35,15 +35,15 @@ public class Insertbeg
         }
     
     public static void main(String[] args)
-{
-    Insertbeg l = new Insertbeg();
-    Scanner sc = new Scanner(System.in);
-    l.insertAtBeginning(sc.nextInt());
-    l.insertAtBeginning(sc.nextInt());
-    l.insertAtBeginning(sc.nextInt());
-    l.display();
-    sc.close();
-}
+    {
+        Insertbeg l = new Insertbeg();
+        Scanner sc = new Scanner(System.in);
+        l.insertAtBeginning(sc.nextInt());
+        l.insertAtBeginning(sc.nextInt());
+        l.insertAtBeginning(sc.nextInt());
+        l.display();
+        sc.close();
+    }
     
 }
 
