@@ -1,4 +1,5 @@
-public class llcreate 
+
+linkedlist class linkedlist 
 {
     class node
     {
@@ -19,5 +20,5 @@ public class llcreate
 
 public static void main(String[] args)
 {
-    llcreate list = new llcreate();
+    linkedlist list = new linkedlist();
 }
