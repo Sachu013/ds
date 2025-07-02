@@ -1,5 +1,5 @@
 
-class linkedlist 
+Linkedlistedlist 
 {
     class node
     {
@@ -20,5 +20,5 @@ class linkedlist
 
 public static void main(String[] args)
 {
-    linkedlist list = new linkedlist();
+    Linkedlist list = new Linkedlist();
 }
