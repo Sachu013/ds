@@ -1,18 +1,5 @@
 public class doublelinkedlist 
 {
-    class node
-    {
-        int data;
-        node next;
-        node prev;
-
-        node(int data)
-        {
-            this.data =  data;
-            next = null;
-            prev = null;
-        }
-    }
 
     node head;
 
@@ -49,7 +36,38 @@ public class doublelinkedlist
 
     }
 
-    public void display()
+
+    public void insertatpos(int data, int pos)
+    {
+        node n = new node(data);
+        if(pos == 1)
+        {
+            insertbeg(data);
+        }
+        else
+        {
+            node cur=head;
+            for(int i=1; i<pos-1 && cur!=null; i++)
+            {
+                cur = cur.next;
+            }
+            if(cur == null)
+            {
+                System.out.println("Position out of bounds");
+            }
+            else
+            {
+                n.next=cur.next;
+                n.prev=cur;
+                cur.next = n;
+                n.next.prev=n;
+            }
+
+        }
+
+    }
+
+    public void displayforward()
     {
         node cur = head;
         while(cur!=null)
@@ -59,15 +77,20 @@ public class doublelinkedlist
         }
     }
 
-
-    public static void main(String[] args) 
+    public void displaybackward()
     {
-        doublelinkedlist dll = new doublelinkedlist();
-        dll.insertbeg(10);
-        dll.insertbeg(20);
-        dll.insertend(30);
-        dll.insertend(40);
-        dll.display(); // Output: 20 10 30 40
+        node cur = head;
+        node a = null;
+        while(cur!=null)
+        {
+            a=cur;
+            cur=cur.next;
+        }
+        while(a!=head)
+        {
+            System.out.print(a.data + " ");
+            a=a.prev;
+        }
     }
 
 }  
