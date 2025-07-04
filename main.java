@@ -6,9 +6,8 @@ public class main
         dll.insertbeg(10);
         dll.insertend(20);
         dll.insertatpos(15, 2);
-        dll.display();
-        dll.delete(15);
-        dll.display();
+        dll.displayforward();
+        dll.displaybackward();
     }
     
 }

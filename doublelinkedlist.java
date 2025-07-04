@@ -75,22 +75,23 @@ public class doublelinkedlist
             System.out.print(cur.data + " ");
             cur=cur.next;
         }
+        System.out.println();
     }
 
     public void displaybackward()
     {
         node cur = head;
-        node a = null;
-        while(cur!=null)
+        while(cur.next!=null)
         {
-            a=cur;
             cur=cur.next;
         }
-        while(a!=head)
+        while(cur!=null)
         {
-            System.out.print(a.data + " ");
-            a=a.prev;
+            System.out.print(cur.data + " ");
+            cur=cur.prev;
         }
+        System.out.println();
+
     }
 
 }  
